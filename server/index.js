@@ -41,7 +41,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/values/all", async (req, res) => {
-  const values = await pgClient.query("SELECT * from values");
+  const no = await pgClient.query("SELECT COUNT(*) as count_rows from values");
+  const rowsNo = no.rows[0].count_rows;
+  const query = "SELECT * from values OFFSET "+(rowsNo-10);
+  const values = await pgClient.query(query);
 
   res.send(values.rows);
 });

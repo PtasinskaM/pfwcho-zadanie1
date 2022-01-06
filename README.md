@@ -4,7 +4,7 @@
 
 ## Zmodyfikowano:
 ### server:
-* **index.js** - zmieniono limit dla indeksu k do 20
+* **index.js** - zmieniono limit dla indeksu k do 20 i wyświetlanie 10 ostatnich wpisanych wartości
 
 ### client:
 * **Fib.js** - zmodyfikowano funkcję render (wyświetlanie historii)

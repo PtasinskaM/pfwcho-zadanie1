@@ -74,7 +74,6 @@ class Fib extends Component {
         </details>
         
       </div>
-      <p></p>
       <a href="/">Powrót</a>
       </header>
     );
